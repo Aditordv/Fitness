@@ -4,7 +4,7 @@
 
 
 .jumbotron{
-    padding: 70px 30px 70px 30px;
+    padding: 40px 30px 40px 30px;
     margin: 0px auto;
     background:rgb(117, 110, 110);
     color: floralwhite;
@@ -20,9 +20,7 @@
 
 body{
     padding: 50px 0px 50px 0px;
-    z-index: 0;
-   
-    
+    z-index: 0; 
 }
 
 .fa-heart{
@@ -51,5 +49,23 @@ body{
 .card-header{
     background: grey;
 }
+
+.carousel{
+    background: black;
+    padding: 50px 0px 50px 0px;
+    opacity: 90%;
+}
+
+.modal-header{
+    color: floralwhite;
+    background: grey;
+}
+
+
+
+
+
+
+
 
   
