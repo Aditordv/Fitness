@@ -31,10 +31,63 @@
             </ul>
         </div>
         
+        
         <div class="navbar-text">
+            <a class="btn btn-success" role="button" data-toggle="modal" href="#faqmodal">Help</a>
             <a data-toggle="modal" href="#loginModal"><span class="fa fa-sign-in"></span> Login</a>
         </div>
     </nav>
+
+    <div id="faqmodal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4>Frequently Asked Questions</h4>
+                    <button class="btn btn-danger close" type="button" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <div id="modal-accordion">
+                        <div class="card">
+                            <div class="card-header row align-items-center">
+                                <h4 class="col-11">Fitness Question 1</h4>
+                                <span class="col-1 fa fa-plus" data-toggle="collapse" data-target="#q1"></span>
+                            </div>
+                            <div class="card-body row collapse fade" data-parent="#modal-accordion" id="q1">
+                                <h5 class="col-12">Fitness answer 1</h5>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header row align-items-center">
+                                <h4 class="col-11">Fitness Question 2</h4>
+                                <span class="col-1 fa fa-plus" data-toggle="collapse" data-target="#q2"> 
+                            </div>
+                            <div class="card-body row collapse fade" data-parent="#modal-accordion" id="q2">
+                                <h5 class="col-12">Fitness answer 2</h5>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header row align-items-center">
+                                <h4 class="col-11">Fitness Question 3</h4>
+                                <span class="col-1 fa fa-plus" data-toggle="collapse" data-target="#q3"></span>
+                            </div>
+                            <div class="card-body row collapse fade" data-parent="#modal-accordion" id="q3">
+                                <h5 class="col-12">Fitness answer 3</h5>
+                            </div>
+                        </div>
+                        <br>
+                        
+                        <button class="offset-10 col-2 btn btn-info" type="button" data-dismiss="modal">Close</button>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div id="loginModal" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg" role="content">
