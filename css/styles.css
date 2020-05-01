@@ -4,7 +4,7 @@
 
 
 .jumbotron{
-    padding: 40px 30px 40px 30px;
+    padding: auto;
     margin: 0px auto;
     background:rgb(117, 110, 110);
     color: floralwhite;
@@ -60,6 +60,35 @@ body{
     color: floralwhite;
     background: grey;
 }
+
+form{
+    opacity: 80%;
+}
+
+.paral {
+    min-height: 400px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50% 50%;
+    }
+
+/* Paragraph for Parallax Section */ 
+
+
+    /* Image for Parallax Section */ 
+.paralsec {
+    background-image: url("https://img.webnots.com/2017/05/parallax.jpg");
+    }
+     
+.paralsec1 {
+    background-image: url("https://img.webnots.com/2017/05/parallax1.jpg");
+}
+     
+.paralsec2 {
+    background-image: url("https://img.webnots.com/2015/11/parallax2.jpg");
+    }
+     
+    /* Add more images for more sections */
 
 
 
