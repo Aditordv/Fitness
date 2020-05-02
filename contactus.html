@@ -7,10 +7,12 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
     <!-- css links -->
+    <!-- build:css css/main.css -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
     <link rel="stylesheet" href="css/styles.css">
+    <!-- endbuild -->
     <title>Fitness Website</title>
 </head>
 
@@ -32,10 +34,62 @@
         </div>
 
         <div class="navbar-text">
+                <a class="btn btn-success" role="button" data-toggle="modal" href="#faqmodal">Help</a>
                 <a data-toggle="modal" href="#loginModal"><span class="fa fa-sign-in"></span> Login</a>
         </div>
         
     </nav>
+
+    <div id="faqmodal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4>Frequently Asked Questions</h4>
+                    <button class="btn btn-danger close" type="button" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <div id="modal-accordion">
+                        <div class="card">
+                            <div class="card-header row align-items-center">
+                                <h4 class="col-10 col-sm-11">Fitness Question 1</h4>
+                                <span class="col-2 col-sm-1 fa fa-plus" data-toggle="collapse" data-target="#q1"></span>
+                            </div>
+                            <div class="card-body row collapse fade" data-parent="#modal-accordion" id="q1">
+                                <h5 class="col-12">Fitness answer 1</h5>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header row align-items-center">
+                                <h4 class="col-10 col-sm-11">Fitness Question 2</h4>
+                                <span class="col-2 col-sm-1 fa fa-plus" data-toggle="collapse" data-target="#q2"> 
+                            </div>
+                            <div class="card-body row collapse fade" data-parent="#modal-accordion" id="q2">
+                                <h5 class="col-12">Fitness answer 2</h5>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header row align-items-center">
+                                <h4 class="col-10 col-sm-11">Fitness Question 3</h4>
+                                <span class="col-2 col-sm-1 fa fa-plus" data-toggle="collapse" data-target="#q3"></span>
+                            </div>
+                            <div class="card-body row collapse fade" data-parent="#modal-accordion" id="q3">
+                                <h5 class="col-12">Fitness answer 3</h5>
+                            </div>
+                        </div>
+                        <br>
+                        
+                        <button class="offset-9 col-auto offset-sm-10 col-sm-2 btn btn-info" type="button" data-dismiss="modal">Close</button>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div id="loginModal" class="modal fade" role="dialog">
             <div class="modal-dialog modal-lg" role="content">
@@ -105,42 +159,12 @@
                 <hr>
             </div>
         </div>
-        
+
         <div class="row row-content">
             <div class="col-12">
-                <h2>Location Information</h2>
-            </div>
-
-
-            <div class="col-12 col-sm-6 offset-sm-1">
-                <h3>Our Address</h3>
-                <address>
-                    S-2<br>
-                    Ganesh Prasad Housing Society<br>
-                    Khadpabandh, Ponda<br>
-                    Goa<br>
-                    403401
-                    <br>
-                    <span class="fa fa-phone fa-lg"></span> : +91 9894406275<br>
-                    <span class="fa fa-fax fa-lg"></span> : +91 99894406275<br>
-                    <span class="fa fa-envelope fa-lg"></span> : <a href="mailto:adityadalvi2099@gmail.com">adityadalvi2099@gmail.com</a>
-                </address>
-            </div>
-
-            <div class="col-12 offset-sm-1">
-                <div class="btn-group" role="group">
-                    <a class="btn btn-success" role="button" href="tel:+91 9894406275"><span class="fa fa-phone fa-lg"></span> Call Us</a>
-                    <a class="btn btn-primary" role="button" href="#"><span class="fa fa-skype fa-lg"></span> Skype</a>
-                    <a class="btn btn-warning" role="button" href="mailto:adityadalvi2099@gmail.com"><span class="fa fa-envelope fa-lg"></span> Email</a>
-                </div>
-            </div>
-
-                
-        </div>
-   
-        <div class="row row-content">
-            <div class"col-12">
                 <h2><u>Write back to us</u></h2>
+            </div>
+            <div>
                 <form>
                     <div class="form-group row">
                         <label for="firstname" class="col-md-4 col-form-label">First Name</label>
@@ -210,6 +234,40 @@
             </div>
         </div>
 
+        
+        <div class="row row-content">
+            <div class="col-12">
+                <h2>Location Information</h2>
+            </div>
+
+
+            <div class="col-12 col-sm-6 offset-sm-1">
+                <h3>Our Address</h3>
+                <address>
+                    S-2<br>
+                    Ganesh Prasad Housing Society<br>
+                    Khadpabandh, Ponda<br>
+                    Goa<br>
+                    403401
+                    <br>
+                    <span class="fa fa-phone fa-lg"></span> : +91 9894406275<br>
+                    <span class="fa fa-fax fa-lg"></span> : +91 99894406275<br>
+                    <span class="fa fa-envelope fa-lg"></span> : <a href="mailto:adityadalvi2099@gmail.com">adityadalvi2099@gmail.com</a>
+                </address>
+            </div>
+
+            <div class="col-12 offset-sm-1">
+                <div class="btn-group" role="group">
+                    <a class="btn btn-success" role="button" href="tel:+91 9894406275"><span class="fa fa-phone fa-lg"></span> Call Us</a>
+                    <a class="btn btn-primary" role="button" href="#"><span class="fa fa-skype fa-lg"></span> Skype</a>
+                    <a class="btn btn-warning" role="button" href="mailto:adityadalvi2099@gmail.com"><span class="fa fa-envelope fa-lg"></span> Email</a>
+                </div>
+            </div>
+
+                
+        </div>
+   
+       
     
     </div>
 </div>
@@ -255,14 +313,12 @@
         </footer>
         
     <!-- js links -->
+    <!-- build:js js/main.js -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            $('[data-toggle="tooltip"]').tooltip();
-        });
-    </script>
+    <script src="js/scripts.js"></script>
+    <!-- endbuild -->
 </body>
 
 </html>
